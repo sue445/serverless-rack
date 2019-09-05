@@ -288,7 +288,7 @@ class ServerlessRack {
           "run",
           "--rm",
           "-v",
-          `${this.serverless.config.servicePath}:/var/task`
+          `${this.serverless.config.servicePath}/:/var/task/`
         ];
 
         if (this.bundlerArgs) {
